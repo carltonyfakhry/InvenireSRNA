@@ -54,7 +54,6 @@ probabilities = predict_fasta(fname2, new_model)
 head(probabilities)
 ```
 
-
 ## Citation
 
 Carl Tony Fakhry, Prajna Kulkarni, Ping Chen, Rahul Kulkarni and Kourosh Zarringhalam (2017). "Prediction of bacterial small RNAs in the RsmA (CsrA) and ToxT pathways: a machine learning approach." BMC Genomics, 18.

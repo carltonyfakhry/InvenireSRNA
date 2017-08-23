@@ -2,7 +2,7 @@ Package: InvenireSRNA
 Type: Package
 Title: Invenire Small RNA
 Version: 1.0
-Date: 2015-04-10
+Date: 2017-08-01
 Authors@R: c(
     person("Carl", "Fakhry", email = "cfakhry@cs.umb.edu", role = c("cre","aut")),
     person("Kourosh", "Zarringhalam", role = c("aut","ths")),
@@ -16,9 +16,6 @@ Depends:
     glmnet,
     stringr,
     Biostrings,
-    shiny,
-    shinyBS,
-    shinyjs
 LinkingTo: Rcpp
 LazyData: true
 Suggests:
