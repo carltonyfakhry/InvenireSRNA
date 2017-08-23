@@ -5,7 +5,7 @@ Small RNAs (sRNAs) constitute an important class of post-transcriptional regulat
 Before installing this package, make sure you have the latest version of *Rstudio*, *R* and the *devtools* package. You also need to have C++11 available on your machine for the algorithm to run properly. The python package *Biopython* is also required for running the algorithm. Finally, you will need to install the [ViennaRNA](http://www.tbi.univie.ac.at/RNA/) package. You can install this R pacakge using the following:
 ```{R}
 library(devtools)
-install_github("carltonyfakhry/InvenireSRNA", build_vignettes = TRUE)
+install_github("carltonyfakhry/InvenireSRNA", build_vignettes = F, local)
 ```
 
 ## Usage

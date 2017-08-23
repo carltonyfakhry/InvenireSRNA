@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // get_features
 NumericVector get_features(std::string rna_seq, CharacterVector Struct_seq);
-RcppExport SEXP InvenireSRNA_get_features(SEXP rna_seqSEXP, SEXP Struct_seqSEXP) {
+RcppExport SEXP _InvenireSRNA_get_features(SEXP rna_seqSEXP, SEXP Struct_seqSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"InvenireSRNA_get_features", (DL_FUNC) &InvenireSRNA_get_features, 2},
+    {"_InvenireSRNA_get_features", (DL_FUNC) &_InvenireSRNA_get_features, 2},
     {NULL, NULL, 0}
 };
 

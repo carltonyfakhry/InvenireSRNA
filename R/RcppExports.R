@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 get_features <- function(rna_seq, Struct_seq) {
-    .Call('InvenireSRNA_get_features', PACKAGE = 'InvenireSRNA', rna_seq, Struct_seq)
+    .Call('_InvenireSRNA_get_features', PACKAGE = 'InvenireSRNA', rna_seq, Struct_seq)
 }
 
