@@ -1,0 +1,26 @@
+Package: InvenireSRNA
+Type: Package
+Title: Invenire Small RNA
+Version: 1.0
+Date: 2015-04-10
+Authors@R: c(
+    person("Carl", "Fakhry", email = "cfakhry@cs.umb.edu", role = c("cre","aut")),
+    person("Kourosh", "Zarringhalam", role = c("aut","ths")),
+    person("Rahul", "Kulkarni", role = "ths"),
+    person("Ping", "Chen", role = "ths"))
+Description: Computes the probability of a sequence being a small RNA.
+License: GPL (>=3)
+Depends:
+    R (>= 3.2.0),
+    Rcpp (>= 0.11.3),
+    glmnet,
+    stringr,
+    Biostrings,
+    shiny,
+    shinyBS,
+    shinyjs
+LinkingTo: Rcpp
+LazyData: true
+Suggests:
+    knitr
+RoxygenNote: 6.0.1
