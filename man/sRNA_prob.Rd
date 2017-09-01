@@ -7,11 +7,11 @@
 sRNA_prob(rna_sequence, InvenireSRNA_model = NULL)
 }
 \arguments{
+\item{rna_sequence}{RNA Sequence constructed with nucleotides A,C,G,T and U.}
+
 \item{InvenireSRNA_model}{object of class InvenireSRNA to be used for prediction.
 If \emph{InvenireSRNA_model = NULL} then the pretrained
 model to predict CsrA regulating sRNAs is used.}
-
-\item{sequence}{RNA Sequence constructed with nucleotides A,C,G,T and U.}
 }
 \value{
 The functions returns a list containing the following elements:

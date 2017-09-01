@@ -1,2 +1,2 @@
-CXX = g++-4.8.3
-PKG_CXXFLAGS = -std=c++11
+#CXX = g++-4.8.3
+CXX_STD = CXX11

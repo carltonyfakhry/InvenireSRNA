@@ -223,7 +223,7 @@ predict_fasta <- function(fasta_file, InvenireSRNA_model = NULL){
 #'
 #' @usage sRNA_prob(rna_sequence, InvenireSRNA_model = NULL)
 #'
-#' @param sequence RNA Sequence constructed with nucleotides A,C,G,T and U.
+#' @param rna_sequence RNA Sequence constructed with nucleotides A,C,G,T and U.
 #' @param InvenireSRNA_model object of class InvenireSRNA to be used for prediction.
 #'                           If \emph{InvenireSRNA_model = NULL} then the pretrained
 #'                           model to predict CsrA regulating sRNAs is used.
