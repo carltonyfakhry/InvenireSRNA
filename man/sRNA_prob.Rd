@@ -4,7 +4,7 @@
 \alias{sRNA_prob}
 \title{Computes the probability of a sequence beloning to a certain class of sRNA.}
 \usage{
-sRNA_prob(rna_sequence, model = NULL)
+sRNA_prob(rna_sequence, InvenireSRNA_model = NULL)
 }
 \arguments{
 \item{InvenireSRNA_model}{object of class InvenireSRNA to be used for prediction.

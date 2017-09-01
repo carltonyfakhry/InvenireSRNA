@@ -4,8 +4,7 @@
 \alias{TrainModels}
 \title{This function trains a class of models given a FASTA file with seed sequences.}
 \usage{
-TrainModels(seed_sequences_fasta, n_models = 100, bootstrap_iterations = 1000,
-                   Kfold = 10)
+TrainModels(seed_sequences_fasta, n_models = 100, bootstrap_iterations = 1000)
 }
 \arguments{
 \item{seed_sequences_fasta}{The FASTA file containing the seed sequences.}

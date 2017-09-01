@@ -5,7 +5,7 @@
 #'              for all the features. Non-robust features will have coefficients
 #'              equal to zero.
 #'
-#' @usage TrainModel(Y, X, bootstrap_iterations = 100, Kfold = 10)
+#' @usage TrainModel(Y, X, bootstrap_iterations = 1000, Kfold = 10)
 #'
 #' @param Y Class labels of the rows of \emph{X}. There can only be 2 class labels
 #' @param X The feature matrix.
@@ -56,7 +56,7 @@ TrainModel <- function(X, Y, bootstrap_iterations = 1000, Kfold = 10){
     XX = rbind(X1,X2)
 
     fit <- glmnet(XX, YY, family= "binomial", lambda = lambda.min)
-    nonzeroes = as.vector(coef(fit))
+    nonzeroes = as.vector(stats::coef(fit))
     nonzeroes = nonzeroes[2:515]
     nonzeroes[nonzeroes != 0] = 1
     df[i,] = nonzeroes
@@ -89,8 +89,7 @@ TrainModel <- function(X, Y, bootstrap_iterations = 1000, Kfold = 10){
 #'              for prediction on the class of sRNAs which the seed sequences belong
 #'              to.
 #'
-#' @usage TrainModels(seed_sequences_fasta, n_models = 100, bootstrap_iterations = 1000,
-#'                    Kfold = 10)
+#' @usage TrainModels(seed_sequences_fasta, n_models = 100, bootstrap_iterations = 1000)
 #'
 #' @param seed_sequences_fasta The FASTA file containing the seed sequences.
 #' @param n_models The number of models to be learned. \emph{n_models} must be
@@ -153,7 +152,7 @@ TrainModels <- function(seed_sequences_fasta, n_models = 100, bootstrap_iteratio
 #' @description Given a model for prediction, compute the probabilities of the
 #'              new sequences.
 #'
-#' @usage predict_fasta(fasta_file, model)
+#' @usage predict_fasta(fasta_file, InvenireSRNA_model = NULL)
 #'
 #' @param fasta_file A path to a FASTA file containing the RNA sequences constructed with
 #'                   nucleotides A,C,G,T and U.
@@ -222,7 +221,7 @@ predict_fasta <- function(fasta_file, InvenireSRNA_model = NULL){
 #' @description This function computes the probability of a given sequence belonging
 #'              to a certain class of sRNA.
 #'
-#' @usage sRNA_prob(rna_sequence, model = NULL)
+#' @usage sRNA_prob(rna_sequence, InvenireSRNA_model = NULL)
 #'
 #' @param sequence RNA Sequence constructed with nucleotides A,C,G,T and U.
 #' @param InvenireSRNA_model object of class InvenireSRNA to be used for prediction.

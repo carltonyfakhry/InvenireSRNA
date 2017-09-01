@@ -4,7 +4,7 @@
 \alias{TrainModel}
 \title{This function trains a model given a fixed training data set.}
 \usage{
-TrainModel(Y, X, bootstrap_iterations = 100, Kfold = 10)
+TrainModel(Y, X, bootstrap_iterations = 1000, Kfold = 10)
 }
 \arguments{
 \item{X}{The feature matrix.}

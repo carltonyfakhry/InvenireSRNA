@@ -4,7 +4,7 @@
 \alias{predict_fasta}
 \title{Given a model for prediction, compute the probabilities of the new sequences.}
 \usage{
-predict_fasta(fasta_file, model)
+predict_fasta(fasta_file, InvenireSRNA_model = NULL)
 }
 \arguments{
 \item{fasta_file}{A path to a FASTA file containing the RNA sequences constructed with
