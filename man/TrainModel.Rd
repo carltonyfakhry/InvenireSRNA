@@ -7,9 +7,9 @@
 TrainModel(Y, X, bootstrap_iterations = 1000, Kfold = 10)
 }
 \arguments{
-\item{X}{The feature matrix.}
-
 \item{Y}{Class labels of the rows of \emph{X}. There can only be 2 class labels}
+
+\item{X}{The feature matrix.}
 
 \item{bootstrap_iterations}{The number of iterations for bootstrapping.}
 

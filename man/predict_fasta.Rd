@@ -12,9 +12,10 @@ nucleotides A,C,G,T and U.}
 
 \item{InvenireSRNA_model}{An object with S3 class \emph{InvenireSRNA} to be used for prediction. If \emph{InvenireSRNA_model = NULL}
 then the pretrained model to predict CsrA regulating sRNAs is used.}
-
-\item{return}{A data frame containing the mean and standard deviation of the prediction
-probabilities using the given \emph{InvenireSRNA_model} object.}
+}
+\value{
+A data frame containing the mean and standard deviation of the prediction
+              probabilities using the given \emph{InvenireSRNA_model} object.
 }
 \description{
 Given a model for prediction, compute the probabilities of the

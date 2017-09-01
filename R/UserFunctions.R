@@ -18,7 +18,7 @@
 #'
 #' @author Carl Tony Fakhry , Kourosh Zarringhalam, Rahul Kulkarni and Ping Chen.
 #'
-TrainModel <- function(X, Y, bootstrap_iterations = 1000, Kfold = 10){
+TrainModel <- function(Y, X, bootstrap_iterations = 1000, Kfold = 10){
 
   size_of_sample = floor(nrow(X)/2)
 
@@ -56,7 +56,7 @@ TrainModel <- function(X, Y, bootstrap_iterations = 1000, Kfold = 10){
     XX = rbind(X1,X2)
 
     fit <- glmnet(XX, YY, family= "binomial", lambda = lambda.min)
-    nonzeroes = as.vector(stats::coef(fit))
+    nonzeroes = as.vector(coef(fit))
     nonzeroes = nonzeroes[2:515]
     nonzeroes[nonzeroes != 0] = 1
     df[i,] = nonzeroes
@@ -159,7 +159,7 @@ TrainModels <- function(seed_sequences_fasta, n_models = 100, bootstrap_iteratio
 #' @param InvenireSRNA_model An object with S3 class \emph{InvenireSRNA} to be used for prediction. If \emph{InvenireSRNA_model = NULL}
 #'              then the pretrained model to predict CsrA regulating sRNAs is used.
 #'
-#' @param return A data frame containing the mean and standard deviation of the prediction
+#' @return A data frame containing the mean and standard deviation of the prediction
 #'               probabilities using the given \emph{InvenireSRNA_model} object.
 #'
 #' @author Carl Tony Fakhry , Kourosh Zarringhalam, Rahul Kulkarni and Ping Chen.
