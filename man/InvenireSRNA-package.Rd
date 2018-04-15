@@ -11,9 +11,9 @@ Small RNAs (sRNAs) constitute an important class of post-transcriptional regulat
 \tabular{ll}{
 Package: \tab InvenireSRNA\cr
 Type: \tab Package\cr
-Version: \tab 0.1.0\cr
+Version: \tab 1.0\cr
 Date: \tab 2017-08-01\cr
-License: \tab GPL (>= 2)\cr
+License: \tab GPL (>= 3)\cr
 }
 
 }

@@ -71,7 +71,7 @@ getNegativeSequencesFeatures <- function(fastaFile, min_energy, max_energy){
       temp_min_energy <- as.numeric(str_match_all(struct[2],"\\(([ ]*-{0,1}[0-9]*\\.{0,1}[0-9]*)\\)$")[[1]][1,2]) # grep minimum free energy
       if(temp_min_energy <= max_energy & temp_min_energy >= min_energy){
         structs = system(RNAsubopt, intern = T, wait = TRUE, input = shuffled_rna) # generate sample of secondary structures to generate features
-        new_feat = InvenireSRNA:::get_features(shuffled_rna, structs)
+        new_feat = get_features(shuffled_rna, structs)
         D = rbind(D, new_feat)
         break
       }
@@ -108,7 +108,7 @@ getBoltzmanTripletFeatures = function(fastaFile){
     rna = gsub("t", "u", rna)
 
     structs = system(RNAsubopt, intern = T, wait = TRUE, input = rna)
-    new_feat = InvenireSRNA:::get_features(rna, structs)
+    new_feat = get_features(rna, structs)
     D = rbind(D, new_feat)
 
   }

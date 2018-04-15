@@ -1,6 +1,8 @@
 Package: InvenireSRNA
 Type: Package
-Title: Invenire Small RNA
+Title: An R package which specializes in predicting CsrA regulating sRNAs and
+       also provides the user with the ability to learn a similar classification
+       model for different classes of sRNAs
 Version: 1.0
 Date: 2017-08-01
 Authors@R: c(
@@ -8,7 +10,17 @@ Authors@R: c(
     person("Kourosh", "Zarringhalam", role = c("aut","ths")),
     person("Rahul", "Kulkarni", role = "ths"),
     person("Ping", "Chen", role = "ths"))
-Description: Computes the probability of a sequence being a small RNA.
+Description: Small RNAs (sRNAs) constitute an important class of post-transcriptional
+              regulators that control critical cellular processes in bacteria. While
+              recent research has led to a dramatic increase in the discovery of bacterial sRNAs,
+              it is generally believed that the currently identified sRNAs constitute a limited
+              subset of the bacterial sRNA repertoire. In several cases, sRNAs belonging to
+              a specific class are already known and the challenge is to identify additional
+              sRNAs belonging to the same class. InvenireSRNA is an R package for learning
+              a generalized classification model for any given class of sRNA thus allowing for
+              the discovery of additional sRNAs belonging to the same class. InvenireSRNA
+              also provides pretrained models for predicting RsmA/CsrA-regulating and toxT-
+              regulated sRNAs.
 License: GPL (>=3)
 Depends:
     R (>= 3.2.0),
@@ -20,5 +32,5 @@ LinkingTo: Rcpp
 LazyData: true
 Suggests:
     knitr
-RoxygenNote: 6.0.1
-SystemRequirements: GNU make, C++11
+RoxygenNote: 6.0.1.9000
+SystemRequirements: C++11

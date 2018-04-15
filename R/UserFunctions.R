@@ -196,7 +196,7 @@ predict_fasta <- function(fasta_file, InvenireSRNA_model = NULL){
 
     RNAsubopt = 'RNAsubopt -p 1000'
     structs = system(RNAsubopt, intern = T,wait = TRUE, input = rna)
-    features = InvenireSRNA:::get_features(rna, structs)
+    features = get_features(rna, structs)
     features = c(1, features) # constant has feature 1
 
     prods = as.vector(apply(coefficients_4_features, 1, function(x) sum(x * features)))
@@ -243,7 +243,7 @@ sRNA_prob <- function(rna_sequence, InvenireSRNA_model = NULL){
   rna = gsub("t", "u", rna)
   RNAsubopt = 'RNAsubopt -p 1000'
   structs = system(RNAsubopt, intern = T,wait = TRUE, input = rna)
-  features = InvenireSRNA:::get_features(rna, structs)
+  features = get_features(rna, structs)
   features = c(1, features)
 
   if(is.null(InvenireSRNA_model)){

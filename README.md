@@ -19,4 +19,8 @@ browseVignettes("InvenireSRNA")
 An interactive webserver providing some of the functionality as this R package is available at [InvenireSRNA web server](http://markov.math.umb.edu/inveniresrna/).
 
 ## Citation
-Carl Tony Fakhry, Prajna Kulkarni, Ping Chen, Rahul Kulkarni and Kourosh Zarringhalam (2017). "Prediction of bacterial small RNAs in the RsmA (CsrA) and ToxT pathways: a machine learning approach." BMC Genomics, 18.
+[1] Carl Tony Fakhry, Prajna Kulkarni, Ping Chen, Rahul Kulkarni and Kourosh Zarringhalam (2017). "Prediction of bacterial small RNAs in the RsmA (CsrA) and ToxT pathways: a machine learning approach." BMC Genomics, 18.
+
+[2] Carl T. Fakhry, Kourosh Zarringhalam, and Rahul V. Kulkarni. "Bioinformatic Approach for Prediction of CsrA/RsmA-Regulating Small
+RNAs in Bacteria." Methods in Molecular Biology, pp. 47-56. Humana
+Press, New York, NY, 2018.

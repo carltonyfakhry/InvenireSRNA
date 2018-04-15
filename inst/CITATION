@@ -1,0 +1,25 @@
+citHeader("Please cite the papers below. Thank you for using InvenireSRNA.")
+
+
+citEntry(entry = "InBook",
+  title        = paste("Bioinformatic approach for prediction of CsrA/RsmA-Regulating ",
+                       "Small RNAs in Bacteria", sep = ""),
+  author       = personList(as.person("Carl Tony Fakhry"),
+                            as.person("Kourosh Zarringhalam"),
+                            as.person("Rahul Kulkarni")),
+  chapter       = -1,
+  publisher      = "Humana Press, New York, NY",
+  year         = 2018,
+  textVersion  = "Carl T. Fakhry, Kourosh Zarringhalam, and Rahul V. Kulkarni. 'Bioinformatic Approach for Prediction of CsrA/RsmA-Regulating Small RNAs in Bacteria.' Methods in Molecular Biology, pp. 47-56. Humana
+Press, New York, NY, 2018"
+)
+
+
+citEntry(entry="article",
+        title = "Prediction of bacterial small RNAs in the RsmA (CsrA) and ToxT pathways: a machine learning approach.",
+        author = "Fakhry et al.",
+        journal = "BMC Genomics",
+        year = 2017,
+        textVersion = "Carl Tony Fakhry, Prajna Kulkarni, Ping Chen, Rahul Kulkarni, and
+                Kourosh Zarringhalam. 'Prediction of bacterial small RNAs in the RsmA (CsrA) and                    ToxT pathways: a machine learning approach.', BMC Genomics , 18 :645, August 2017."
+)
