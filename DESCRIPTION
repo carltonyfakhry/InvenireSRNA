@@ -27,7 +27,7 @@ Depends:
     Rcpp (>= 0.11.3),
     glmnet,
     stringr,
-    Biostrings,
+    Biostrings
 LinkingTo: Rcpp
 LazyData: true
 Suggests:
