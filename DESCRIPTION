@@ -20,5 +20,5 @@ LinkingTo: Rcpp
 LazyData: true
 Suggests:
     knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 SystemRequirements: GNU make, C++11

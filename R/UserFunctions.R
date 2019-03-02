@@ -18,6 +18,8 @@
 #'
 #' @author Carl Tony Fakhry , Kourosh Zarringhalam, Rahul Kulkarni and Ping Chen.
 #'
+#' @export
+#'
 TrainModel <- function(Y, X, bootstrap_iterations = 1000, Kfold = 10){
 
   size_of_sample = floor(nrow(X)/2)
@@ -131,7 +133,7 @@ TrainModels <- function(seed_sequences_fasta, n_models = 100, bootstrap_iteratio
 
     X = rbind(positive_features, negative_features)
     Y = c(rep(1, nrow(positive_features)), rep(0, nrow(negative_features)))
-    Coefficients2 = TrainModel(X, Y, bootstrap_iterations = bootstrap_iterations, Kfold = Kfold)
+    Coefficients2 = TrainModel(Y, X, bootstrap_iterations = bootstrap_iterations, Kfold = Kfold)
     coefs_df = rbind(coefs_df, Coefficients2)
 
   }
